@@ -3,18 +3,15 @@ import requests
 
 def img_link(name):
 	url="https://www.amazon.in/s?k="+name.replace(' ','+')
-	page=requests.get(url,timeout=10)
+	page=requests.get(url)
 	htmltxt=page.text
 	soup = BeautifulSoup(htmltxt, "lxml")
-	linklist=[]
-	dict={}
 	for image in soup.select('img[class="s-image"]'):
-		linklist.append(image.get('src'))
-		dict[image.get('src')]=image.get('alt')
-		img=dict[linklist[0]]
-		if linklist[0]==None:
+		link=image.get('src'))
+		name_in_alt=image.get('alt')
+		if link==None:
 			continue
-		return {'link':linklist[0],'name':img}
+		return {'link':link,'name':name_in_alt}
 		break
 	return img_link(name)
 
