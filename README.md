@@ -1,4 +1,4 @@
-# Amazon Image link Scrapper / Grabber / Getter
+# Amazon Product Image link Scrapper / Grabber / Getter
 Get product image from Amazon by inputting product name
 
 Enter Name: Crucial mx500
