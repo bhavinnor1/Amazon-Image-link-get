@@ -1,5 +1,6 @@
 # Amazon Product Image link Scrapper / Grabber / Getter
 Get product image from Amazon by inputting product name
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1lFXdDuAeh0S_gwbKix-Ys1uI1f0ebUoV&authuser=0)
 
 Input:
 
